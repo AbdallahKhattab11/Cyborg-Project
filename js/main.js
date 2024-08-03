@@ -242,6 +242,9 @@ document.addEventListener("DOMContentLoaded", function () {
     discoverAllStreamsBtn.addEventListener("click", function () {
       sessionStorage.setItem("activeLink", this.href);
     });
+
+
+
     document.addEventListener("DOMContentLoaded", getActiveLink());
   } else if (currentPage === "/details.html") {
     //! details.html
