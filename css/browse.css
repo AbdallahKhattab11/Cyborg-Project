@@ -1,0 +1,831 @@
+
+
+
+
+
+/* ? start browse section */
+/* featured-games--top-downloaded */
+.featured-games--top-downloaded {
+  margin-bottom: 60px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+
+/* featured-games */
+.featured-games {
+  width: 64%;
+  background-color: var(--dark-color);
+  border-radius: var(--border-radius);
+  padding: 30px;
+  text-transform: capitalize;
+  position: relative;
+  transition: 0.3s;
+}
+.featured-games > h2 {
+  font-size: 35px;
+  color: var(--main-color);
+  text-transform: capitalize;
+  margin-bottom: 30px;
+
+}
+.featured-games h2 span {
+  color: white;
+  text-decoration: underline;
+}
+.featured-games .swiper {
+  position: unset;
+}
+.featured-games .swiper .swiper-slide{
+  width: 219px;
+  height: 450px;
+  box-sizing: border-box;
+  user-select: none;
+  position: relative;
+}
+
+
+.featured-games .swiper .slide-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 380px;
+  background-image: url("../images/featured-01.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-radius);
+  z-index: -3;
+}
+.featured-games .swiper .slide-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 380px;
+  background-image: url("../images/featured-02.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-radius);
+  z-index: -3;
+}
+.featured-games .swiper .slide-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 380px;
+  background-image: url("../images/featured-03.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-radius);
+  z-index: -3;
+}
+
+.featured-games .swiper .swiper-slide .content .p-hover {
+  background-color: var(--dark-color);
+  color: var(--main-color);
+  font-size: 14px;
+  width: 150px;
+  height: 45px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: calc(var(--border-radius) );
+
+  position: absolute;
+  top: 0;
+  left: 50% ;
+  transform: translate(-50%);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+
+.featured-games .swiper .swiper-slide .content{
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+.featured-games .swiper .swiper-slide .content h2 {
+  font-size: 17px;
+  line-height: 1.7;
+}
+.featured-games .swiper .swiper-slide .content p {
+  color: var(--gray-color);
+  font-size: 13px;
+}
+.featured-games .swiper .swiper-slide .content .titles {
+  width: auto;
+}
+.featured-games .rate-download .rate,
+.featured-games .rate-download .download{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  gap: 5px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.featured-games .rate-download .rate i {
+  color: yellow;
+}
+.featured-games .rate-download .download i {
+  color: var(--main-color);
+}
+
+
+.featured-games .swiper-button-next {
+  color: var(--gray-color);
+  position: absolute;
+  top: 9.5%;
+  right: 6%;
+  transition: 0.3s;
+}
+.featured-games .swiper-button-next::after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.featured-games .swiper-button-prev {
+  color: var(--gray-color);
+  position: absolute;
+  top: 9.5%;
+  left: 87%;
+  transition: 0.3s;
+}
+.featured-games .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+/* featured-games */
+
+
+
+
+
+
+/* top-downloaded */
+
+.top-downloaded {
+  width: 35%;
+  background-color: var(--dark-color);
+  border-radius: var(--border-radius);
+  padding: 30px;
+  text-transform: capitalize;
+  position: relative;
+  transition: 0.3s;
+}
+.top-downloaded h2 {
+  font-size: 30px;
+  color: var(--main-color);
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.top-downloaded h2 span {
+  color: white;
+  text-decoration: underline;
+}
+.top-downloaded ul {
+  box-sizing: border-box;
+}
+.top-downloaded ul li {
+  box-sizing: border-box;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom:1px solid var(--gray-color) ;
+}
+.top-downloaded ul li .content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.top-downloaded ul li .content img {
+  border-radius: var(--border-radius);
+}
+.top-downloaded ul li .content .titles h2 {
+  color: white;
+  font-size: 17px;
+  margin: 0;
+  line-height: 2;
+}
+.top-downloaded ul li .content .titles > p {
+  color: var(--gray-color);
+  line-height: 2;
+}
+
+.top-downloaded ul li .content .titles .rate-download {
+  display: flex;
+  gap: 10px;
+}
+.top-downloaded ul li .content .titles .rate-download .rate,
+.top-downloaded ul li .content .titles .rate-download .download{
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+.top-downloaded ul li .content .titles  .rate-download .rate i {
+  color: yellow;
+}
+.top-downloaded ul li .content .titles  .rate-download .download i {
+  color: var(--main-color);
+}
+
+.top-downloaded ul li:last-child {
+  margin-bottom: 60px;
+}
+
+.top-downloaded ul li > i {
+  color: var(--main-color);
+  padding: 20px;
+  background-color: var(--black-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.top-downloaded a {
+  font-weight: 600;
+  color: #ec6090;
+  font-size: 15px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+}
+/* top-downloaded */
+/* featured-games--top-downloaded */
+
+
+
+
+/* how to start your live stream  */
+.how-to-start-live {
+  width: 100%;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}
+.how-to-start-live h2 {
+  color:var(--main-color);
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.how-to-start-live h2 span {
+  color: white;
+  text-decoration: underline;
+
+}
+.how-to-start-live .cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.how-to-start-live .cards .card {
+  padding: 30px;
+  border: 1px solid #444;
+  border-radius: var(--border-radius);
+}
+.how-to-start-live .cards .card img {
+  border-radius: 50%;
+}
+.how-to-start-live .cards .card .title {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.how-to-start-live .cards .card p {
+  font-size: 15px;
+  color: #666;
+  line-height: 30px;
+  margin-bottom: 0px;
+}
+
+
+
+
+.btn-goToProfile {
+  text-align: center;
+}
+.btn-goToProfile a {
+  font-size: 15px;
+  color: white;
+  background-color: var(--main-color);
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  overflow: hidden;
+  position: relative;
+}
+.btn-goToProfile a:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+/* how to start your live stream  */
+
+
+
+/* most popular live stream */
+.most-popular-live-stream {
+  box-sizing: border-box;
+  background-color: var(--dark-color);
+  border-radius: var(--border-radius);
+  padding: 30px;
+  text-transform: capitalize;
+}
+.most-popular-live-stream h2{
+  margin-bottom: 30px;
+  font-size: 35px;
+  color: var(--main-color);
+}
+.most-popular-live-stream h2 span{
+  color: white;
+  text-decoration: underline;
+}
+.most-popular-live-stream .streams{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(1,1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.most-popular-live-stream .streams .stream{
+  height: auto;
+  overflow: hidden;
+  position: relative;
+
+}
+
+
+.most-popular-live-stream .streams .stream .stream-img{
+  width: 260;
+  height: 260px;
+  margin-bottom: 20px;
+  transition: 0.4s;
+}
+.most-popular-live-stream .streams .str-1 .stream-img {
+  background-image: url("../images/stream-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--border-radius);
+}
+.most-popular-live-stream .streams .str-2 .stream-img {
+  background-image: url("../images/stream-02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--border-radius);
+}
+.most-popular-live-stream .streams .str-3 .stream-img {
+  background-image: url("../images/stream-03.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--border-radius);
+}
+.most-popular-live-stream .streams .str-4 .stream-img {
+  background-image: url("../images/stream-04.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--border-radius);
+}
+
+
+
+.most-popular-live-stream .streams .stream .onHover{
+  font-size: 14px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 70%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  opacity: 0;
+  transition: 0.5s;
+}
+.most-popular-live-stream .streams .stream .onHover:hover {
+  opacity: 1;
+}
+.most-popular-live-stream .streams .stream .onHover .live{
+  background-color: var(--main-color);
+  color: white;
+  display: inline-flex;
+  padding: 5px 15px;
+  border-radius: var(--border-radius);
+
+}
+.most-popular-live-stream .streams .stream .onHover div {
+  background-color: var(--main-color);
+  color: white;
+  display: inline-flex;
+  padding: 5px 15px;
+  border-radius: var(--border-radius);
+  /* margin-bottom: 15px; */
+}
+.most-popular-live-stream .streams .stream .onHover div .views{
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--main-color);
+  color: white;
+  width: auto;
+  padding: 5px 20px;
+  border-radius: var(--border-radius);
+}
+.most-popular-live-stream .streams .stream .onHover div .game{
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--main-color);
+  color: white;
+  width: auto;
+  padding: 5px 15px;
+  border-radius: var(--border-radius);
+}
+
+
+
+.most-popular-live-stream .streams .stream .content{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.most-popular-live-stream .streams .stream .content img {
+  border-radius: 50%;
+}
+
+.most-popular-live-stream .streams .stream .content .titles .streamer-name {
+  display: flex;
+
+}
+.most-popular-live-stream .streams .stream .content .titles .streamer-name .icon{
+  width: 20px;
+  height: 20px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  margin-right: 3px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.most-popular-live-stream .streams .stream .content .titles .streamer-name .icon i{
+  font-size: 12px;
+  color: white;
+  
+}
+.most-popular-live-stream .streams .stream .content .titles .streamer-name h2{
+  font-size: 14px;
+  margin: 0;
+}
+
+
+.most-popular-live-stream .streams .stream .content .titles .description {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+
+
+.discover-all-streams-btn {
+  text-align: center;
+  margin-bottom: -50px;
+}
+.discover-all-streams-btn a {
+  font-size: 14px;
+  color: white;
+  background-color: var(--main-color);
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+.discover-all-streams-btn a:hover {
+  color: var(--main-color);
+  background-color: white;
+}
+
+
+/* most popular live stream */
+/* ? end browse section */
+
+
+
+
+
+
+
+
+
+
+
+/*todo media queries */
+
+@media screen and (max-width:576px) {
+  /* featured-game--top-downloaded */
+  .browse .container {
+    box-sizing: border-box;
+    padding: 60px 20px;
+  }
+  .featured-games--top-downloaded {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .featured-games {
+    padding:30px 15px ;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  @media screen and (max-width:510px){
+    .featured-games h2 {
+      width: 200px;
+    }
+  }
+  .top-downloaded {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .top-downloaded h2 {
+    width: 200px;
+  }
+  .featured-games .swiper .swiper-slide .content{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding:0 10px ;
+    position: absolute;
+    bottom: 0;
+  }
+  .top-downloaded ul li {
+    box-sizing: border-box;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding-bottom: 20px;
+    border-bottom:1px solid var(--gray-color) ;
+  }
+  .top-downloaded ul li .content{
+    gap: 10px;
+  }
+  .featured-games .swiper-button-prev {
+    left: 75%;
+  }
+  /* featured-game--top-downloaded */
+
+
+
+  /* how to start your live stream  */
+  .how-to-start-live h2 {
+    font-size: 30px;
+  }
+  .how-to-start-live .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* how to start your live stream  */
+
+
+    /* most popular live stream  */
+    .most-popular-live-stream h2 {
+      font-size: 30px;
+    }
+    .most-popular-live-stream .streams{
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(4,1fr);
+    }
+    /* most popular live stream  */
+}
+
+
+
+@media screen and (min-width:577px) and (max-width:767px) {
+  /* featured-game--top-downloaded */
+  .browse .container {
+    box-sizing: border-box;
+    padding: 60px 30px;
+  }
+  .featured-games--top-downloaded {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .featured-games {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .top-downloaded {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .top-downloaded ul li .content{
+    gap: 20px;
+  }
+  .featured-games .swiper-button-prev {
+    left: 83%;
+  }
+  /* featured-game--top-downloaded */
+
+    /* how to start your live stream  */
+    .how-to-start-live h2 {
+      font-size: 30px;
+    }
+    .how-to-start-live .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+    /* how to start your live stream  */
+
+  /* most popular live stream  */
+  .most-popular-live-stream h2 {
+    font-size: 30px;
+  }
+  .most-popular-live-stream .streams{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+  /* most popular live stream  */
+  
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  /* featured-game--top-downloaded */
+  .browse .container {
+    box-sizing: border-box;
+    max-width: 100%;
+    /* padding: 60px 30px; */
+  }
+  .featured-games--top-downloaded {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .featured-games {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .featured-games .swiper-button-prev {
+    left: 83%;
+  }
+
+  .top-downloaded {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .top-downloaded ul li .content{
+    gap: 30px;
+  }
+
+  /* featured-game--top-downloaded */
+
+    /* how to start your live stream  */
+    .how-to-start-live .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+    /* how to start your live stream  */
+  
+    /* most popular live stream  */
+    .most-popular-live-stream .streams{
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,1fr);
+    }
+    /* most popular live stream  */
+}
+
+
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+  /* featured-game--top-downloaded */
+  .browse .container {
+    box-sizing: border-box;
+    padding: 60px 30px;
+  }
+  .featured-games {
+    width: 55%;
+  }
+  .featured-games .swiper-button-prev {
+    left: 83%;
+  }
+  /* featured-game--top-downloaded */
+
+
+  /* most popular live stream  */
+  .most-popular-live-stream .streams{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+  /* most popular live stream  */
+}
+
+
+
+@media screen and (min-width:1200px) and (max-width:1399px) {
+  /* featured-game--top-downloaded */
+  .browse .container {
+    box-sizing: border-box;
+    padding: 60px 30px;
+  }
+  .featured-games {
+    width: 58%;
+  }
+  .featured-games .swiper-button-prev {
+    left: 83%;
+  }
+  /* featured-game--top-downloaded */
+
+
+  /* most poplar live stream */
+  .most-popular-live-stream .streams .stream .stream-img{
+    width: 230;
+    height: 230px;
+    margin-bottom: 20px;
+  }
+  .most-popular-live-stream .streams .stream .onHover div {
+    margin-bottom: 15px;
+  }
+  /* most poplar live stream */
+}
+
+
+
+@media screen and (min-width:1400px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
