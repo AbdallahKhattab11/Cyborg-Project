@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // todo Browse page
     // featured games section  using swiper.js for slides
-    const swiper2 = new Swiper(".mySwiper", {
+    const swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
       spaceBetween: 20,
       loop: true,
