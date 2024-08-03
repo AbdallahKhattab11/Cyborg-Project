@@ -14,7 +14,7 @@ let gamingLibraryBtn = document.querySelector(".gaming-library .btn a");
 
 //Browse page variables
 let swiper_slides = document.querySelectorAll(
-  ".featured-games .swiper .swiper-slide"
+  ".swiper .swiper-slide"
 );
 let viewAllGamesLink = document.querySelector(
   ".top-downloaded .top-downloaded-link"
