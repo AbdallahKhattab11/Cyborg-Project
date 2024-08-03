@@ -54,9 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-
 // add clicked link to session storage
 a.forEach((link) => {
   link.addEventListener("click", function () {
@@ -94,6 +91,58 @@ gamingLibraryBtns.forEach((element) => {
     });
   };
 });
+
+
+
+
+
+    // featured games section  using swiper.js for slides
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
+
+      grabCursor: true,
+
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+    });
+    //* --------------------------------------
+
+
+
+
+
+
 
 
 //* --------------------------------------
@@ -166,47 +215,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //! browse.html
 
     // todo Browse page
-    // featured games section  using swiper.js for slides
-    const swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 20,
-      loop: true,
 
-      grabCursor: true,
-
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        300: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        992: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        1200: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-      },
-    });
-    //* --------------------------------------
 
     // hover on swiper-slide
     swiper_slides.forEach((slide) => {
@@ -250,47 +259,6 @@ document.addEventListener("DOMContentLoaded", function () {
     //! details.html
   } else if (currentPage === "/streams.html") {
     //! streams.html
-    // live streams  section  using swiper.js for slides
-    const swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 20,
-      loop: true,
-
-      grabCursor: true,
-
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        300: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        992: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        1200: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-      },
-    });
-    //* --------------------------------------
     // hover on swiper-slide
     streams_swiper_slides.forEach((slide) => {
       slide.addEventListener("mouseover", function () {
