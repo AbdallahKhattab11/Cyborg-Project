@@ -35,24 +35,19 @@ let streams_swiper_slides = document.querySelectorAll(
 
 // ? General
 
-
 //* --------------------------------------
 // animation
 let animation = document.querySelector(".animation");
 
 document.addEventListener("DOMContentLoaded", function () {
   animation.style.cssText = " display: flex;";
-
 });
 
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
     animation.style.cssText = " display: none;";
-
   }, 500);
 });
-
-
 
 // add clicked link to session storage
 a.forEach((link) => {
@@ -92,64 +87,65 @@ gamingLibraryBtns.forEach((element) => {
   };
 });
 
+// featured games section  using swiper.js for slides
+let currentPage2 = window.location.pathname;
+document.addEventListener("DOMContentLoaded", function () {
+  if (currentPage2 === "/browse.html" || currentPage2 === "/streams.html") {
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
 
+      grabCursor: true,
 
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
 
-
-    // featured games section  using swiper.js for slides
-    let currentPage2 = window.location.pathname;
-    document.addEventListener('DOMContentLoaded',function () {
-      if (currentPage2 === "/browse.html" || currentPage2 === '/streams.html') {
-        const swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1200: {
           slidesPerView: 3,
           spaceBetween: 20,
-          loop: true,
-    
-          grabCursor: true,
-    
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-    
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          breakpoints: {
-            300: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 30,
-            },
-            992: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1200: {
-              slidesPerView: 3,
-              spaceBetween: 20,
-            },
-          },
-        });
-      }
-    })
+        },
+      },
+    });
 
-    //* --------------------------------------
+    // hover on swiper-slide
+    swiper_slides.forEach((slide) => {
+      slide.addEventListener("mouseover", function () {
+        this.children[0].children[0].style.cssText = " top: -80px; opacity: 1;";
+      });
+    });
+    swiper_slides.forEach((slide) => {
+      slide.addEventListener("mouseout", function () {
+        this.children[0].children[0].style.cssText = " top: 0; opacity: 0;";
+      });
+    });
+  }
+});
 
-
-
-
-
-
-
+//* --------------------------------------
 
 //* --------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
@@ -222,19 +218,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // todo Browse page
 
-
-    // hover on swiper-slide
-    swiper_slides.forEach((slide) => {
-      slide.addEventListener("mouseover", function () {
-        this.children[0].children[0].style.cssText = " top: -80px; opacity: 1;";
-      });
-    });
-    swiper_slides.forEach((slide) => {
-      slide.addEventListener("mouseout", function () {
-        this.children[0].children[0].style.cssText = " top: 0; opacity: 0;";
-      });
-    });
-
     //* --------------------------------------
 
     // handle view all games link in top downloaded section
@@ -257,8 +240,6 @@ document.addEventListener("DOMContentLoaded", function () {
     discoverAllStreamsBtn.addEventListener("click", function () {
       sessionStorage.setItem("activeLink", this.href);
     });
-
-
 
     document.addEventListener("DOMContentLoaded", getActiveLink());
   } else if (currentPage === "/details.html") {
