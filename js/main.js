@@ -13,9 +13,7 @@ let gamingLibraryBtn = document.querySelector(".gaming-library .btn a");
 //* --------------------------------------
 
 //Browse page variables
-let swiper_slides = document.querySelectorAll(
-  ".swiper .swiper-slide"
-);
+let swiper_slides = document.querySelectorAll(".swiper .swiper-slide");
 let viewAllGamesLink = document.querySelector(
   ".top-downloaded .top-downloaded-link"
 ); // null in another page
@@ -130,7 +128,11 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       },
     });
+  }
+});
 
+document.addEventListener("DOMContentLoaded", function () {
+  if (currentPage2 === "/browse.html" || currentPage2 === "/streams.html") {
     // hover on swiper-slide
     swiper_slides.forEach((slide) => {
       slide.addEventListener("mouseover", function () {
