@@ -231,7 +231,7 @@ section .container {
 /* * banner */
 .home .container .banner {
   color: white;
-  background-image: url("../images/banner-bg.jpg");
+  background-image: url("./banner-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
