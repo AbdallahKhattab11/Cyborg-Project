@@ -130,30 +130,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-  if (currentPage2 === "/browse.html" || currentPage2 === "/streams.html") {
-    // hover on swiper-slide
-    swiper_slides.forEach((slide) => {
-      slide.addEventListener("mouseover", function () {
-        this.children[0].children[0].style.cssText = " top: -80px; opacity: 1;";
-      });
-    });
-    swiper_slides.forEach((slide) => {
-      slide.addEventListener("mouseout", function () {
-        this.children[0].children[0].style.cssText = " top: 0; opacity: 0;";
-      });
-    });
-  }
-});
-
 //* --------------------------------------
 
 //* --------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
   let currentPage = window.location.pathname;
-  if (currentPage === "/index.html") {
-    //! index.html
+  if (currentPage === "/index.html") {    //! index.html
+
 
     // todo Home page
 
@@ -248,19 +231,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //! details.html
   } else if (currentPage === "/streams.html") {
     //! streams.html
-    // hover on swiper-slide
-    streams_swiper_slides.forEach((slide) => {
-      slide.addEventListener("mouseover", function () {
-        this.children[0].children[0].style.cssText = " top: -80px; opacity: 1;";
-      });
-    });
-    streams_swiper_slides.forEach((slide) => {
-      slide.addEventListener("mouseout", function () {
-        this.children[0].children[0].style.cssText = " top: 0; opacity: 0;";
-      });
-    });
 
-    //* --------------------------------------
   } else {
   }
 });

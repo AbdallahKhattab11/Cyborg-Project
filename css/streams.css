@@ -80,27 +80,6 @@
   z-index: -3;
 }
 
-.live-streams .swiper .swiper-slide .content .p-hover {
-  background-color: var(--dark-color);
-  color: var(--main-color);
-  font-size: 14px;
-  width: 150px;
-  height: 45px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: calc(var(--border-radius));
-
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%);
-  transition: 0.5s;
-  opacity: 0;
-}
-
 .live-streams .swiper .swiper-slide .content {
   width: 100%;
   box-sizing: border-box;

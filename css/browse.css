@@ -90,7 +90,7 @@
   z-index: -3;
 }
 
-.featured-games .swiper .swiper-slide .content .p-hover {
+.swiper .swiper-slide .p-hover {
   background-color: var(--dark-color);
   color: var(--main-color);
   font-size: 14px;
@@ -104,13 +104,16 @@
   border-radius: calc(var(--border-radius) );
 
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 50% ;
   transform: translate(-50%);
   transition: 0.5s;
   opacity: 0;
 }
-
+.swiper .swiper-wrapper .swiper-slide:hover .p-hover {
+  bottom: 85px;
+  opacity: 1;
+}
 
 .featured-games .swiper .swiper-slide .content{
   width: 100%;
