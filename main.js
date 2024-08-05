@@ -103,7 +103,7 @@ let currentPage = window.location.pathname;
 document.addEventListener("DOMContentLoaded", function () {
   console.log(currentPage);
   
-  if (currentPage === "/index.html" || currentPage === "/Cyborg-Project/index.html") {
+  if (currentPage === "/index.html" || currentPage === "/Cyborg-Project/index.html" || currentPage === "/Cyborg-Project/") {
 
     //* ----------handle banner Btn----------------------------
     bannerBtn.addEventListener("click", function () {
