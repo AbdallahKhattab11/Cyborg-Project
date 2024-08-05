@@ -5,6 +5,9 @@
   --gray-color: #666;
   --border-radius: 23px;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 html,
 body {

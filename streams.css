@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 /* live-streams--top-streamers */
 .live-streams--top-streamers {
   margin-bottom: 60px;
