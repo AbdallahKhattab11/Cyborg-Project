@@ -103,7 +103,7 @@ let currentPage = window.location.pathname;
 document.addEventListener("DOMContentLoaded", function () {
   console.log(currentPage);
   
-  if (currentPage === "/index.html") {
+  if (currentPage === "/index.html" || currentPage === "/Cyborg-Project/index.html") {
 
     //* ----------handle banner Btn----------------------------
     bannerBtn.addEventListener("click", function () {
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  }else if (currentPage === "/browse.html") {
+  }else if (currentPage === "/browse.html" || currentPage === "/Cyborg-Project/browse.html") {
 
 //* ----------handle swiper.js----------------------------
     const swiper = new Swiper(".mySwiper", {
@@ -209,9 +209,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   document.addEventListener("DOMContentLoaded", getActiveLink());
 
-  }else if (currentPage === "/details.html") {
+  }else if (currentPage === "/details.html" || currentPage === "/Cyborg-Project/details.html") {
 
-  }else if (currentPage === "/streams.html") {
+  }else if (currentPage === "/streams.html" || currentPage === "/Cyborg-Project/streams.html") {
 
     //* ----------handle swiper.js----------------------------
     const swiper = new Swiper(".mySwiper", {
@@ -261,12 +261,5 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener("DOMContentLoaded", getActiveLink());
   }else {
     // Profile page
-
-    //* ----------handle load more clips Btn----------------------------
-    loadMoreClipsBtn.addEventListener("click", function () {
-      
-    })
   }
-
-
 })
