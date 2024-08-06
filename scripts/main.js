@@ -107,19 +107,9 @@ const isHomePage = currentPage === "/index.html";
 const isBrowsePage = currentPage === "/browse.html";
 const isStreamsPage = currentPage === "/streams.html";
 
-if (isHomePage) {
-  homePageScripts();
-  return;
-}
-
-if (isBrowsePage) {
-  browsePageScripts();
-  return;
-}
-
-if (isStreamsPage) {
-  streamsPageScripts();
-}
+if (isHomePage) homePageScripts();
+if (isBrowsePage) browsePageScripts();
+if (isStreamsPage) streamsPageScripts();
 
 // Pages scripts
 function homePageScripts() {
