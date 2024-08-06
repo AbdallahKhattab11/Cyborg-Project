@@ -103,9 +103,9 @@ barsIcon.addEventListener("click", toggleNavMenu);
 //! ----------End of Shared functions--------------------------------------------------------
 
 // Load pages scripts
-const isHomePage = currentPage === "/index.html";
-const isBrowsePage = currentPage === "/browse.html";
-const isStreamsPage = currentPage === "/streams.html";
+const isHomePage = currentPage.includes("index.html");
+const isBrowsePage = currentPage.includes("browse.html");
+const isStreamsPage = currentPage.includes("streams.html");
 
 if (isHomePage) homePageScripts();
 if (isBrowsePage) browsePageScripts();

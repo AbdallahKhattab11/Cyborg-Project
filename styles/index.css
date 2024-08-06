@@ -5,6 +5,7 @@
   --gray-color: #666;
   --border-radius: 23px;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,6 +18,7 @@ body {
   background-color: var(--dark-color);
   font-family: "Poppins", sans-serif;
 }
+
 body {
   position: relative;
 }
@@ -29,6 +31,7 @@ a {
   margin: 0;
   padding: 0;
 }
+
 h1,
 h2,
 h3,
@@ -56,12 +59,14 @@ p {
   align-items: center;
   display: none;
 }
+
 .animation .animation-element {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
+
 .animation .animation-element span {
   width: 25px;
   height: 25px;
@@ -73,15 +78,19 @@ p {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
 .animation .animation-element .s-1 {
   animation-delay: 0.125s;
 }
+
 .animation .animation-element .s-2 {
   animation-delay: 0.25s;
 }
+
 .animation .animation-element .s-3 {
   animation-delay: 0.375s;
 }
+
 .animation .animation-element .s-4 {
   animation-delay: 0.5s;
 }
@@ -91,19 +100,23 @@ p {
     background-color: #eee;
     transform: scale(1);
   }
+
   25% {
     background-color: var(--main-color);
     transform: scale(1.5);
   }
+
   50% {
     background-color: var(--main-color);
     transform: scale(1);
   }
+
   100% {
     background-color: #eee;
     /* transform: scale(0.8) ; */
   }
 }
+
 /*! animation */
 
 /* center the containers */
@@ -118,26 +131,31 @@ footer {
 nav {
   height: 80px;
 }
+
 nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
+
 nav .container .logo-input {
   background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 nav .container .logo-input img {
   width: 190px;
   margin-right: 65px;
   transition: all 0.3s;
 }
+
 nav .container .logo-input .input {
   position: relative;
 }
+
 nav .container .logo-input .input input {
   height: 46px;
   border-radius: var(--border-radius);
@@ -148,6 +166,7 @@ nav .container .logo-input .input input {
   background-color: var(--black-color);
   text-transform: capitalize;
 }
+
 nav .container .logo-input .input i {
   color: var(--gray-color);
   z-index: 3;
@@ -160,10 +179,12 @@ nav .container .logo-input .input i {
 nav {
   margin-bottom: 20px;
 }
+
 nav .container {
   box-sizing: border-box;
   padding: 20px 0;
 }
+
 nav .container .links ul {
   margin: 0;
   padding: 0;
@@ -171,17 +192,21 @@ nav .container .links ul {
   align-items: center;
   z-index: 10000;
 }
+
 nav .container .links ul li {
   margin-left: 25px;
 }
+
 nav .container .links ul li a {
   color: var(--gray-color);
   text-transform: capitalize;
   transition: 0.3s;
 }
+
 nav .container .links ul li a:hover {
   color: var(--main-color);
 }
+
 nav .container .links ul li a.active {
   color: var(--main-color);
 }
@@ -195,11 +220,13 @@ nav .container .links ul li:last-child a {
   justify-content: center;
   align-items: center;
 }
+
 nav .container .links ul li:last-child a img {
   max-width: 30px;
   border-radius: 50%;
   margin-left: 5px;
 }
+
 nav .container .links ul li:last-child:hover a {
   background-color: var(--main-color);
   color: white;
@@ -218,10 +245,12 @@ nav .container .bars-icon {
   border-radius: 8px;
   display: none;
 }
+
 nav .container .bars-icon i {
   font-size: 35px;
   color: rgb(163, 156, 156);
 }
+
 /* end  nav */
 
 /* ? start Home   */
@@ -231,6 +260,7 @@ section .container {
   border-radius: var(--border-radius);
   padding: 60px;
 }
+
 /* * banner */
 .home .container .banner {
   color: white;
@@ -242,21 +272,26 @@ section .container {
   padding: 80px 60px;
   transition: 0.3s;
 }
+
 .home .container .banner .content {
   max-width: 600px;
 }
+
 .home .container .banner .content p {
   margin-bottom: 25px;
   font-size: 20px;
 }
+
 .home .container .banner .content h2 {
   font-size: 45px;
   margin-bottom: 25px;
   text-transform: uppercase;
 }
+
 .home .container .banner .content h2 span {
   color: var(--main-color);
 }
+
 .home .container .banner a {
   font-size: 14px;
   color: #fff;
@@ -271,10 +306,12 @@ section .container {
   overflow: hidden;
   position: relative;
 }
+
 .home .container .banner a:hover {
   color: var(--main-color);
   background-color: white;
 }
+
 /* * banner */
 
 /** most Popular */
@@ -284,12 +321,14 @@ section .container {
   background-color: var(--dark-color);
   border-radius: var(--border-radius);
 }
+
 .home .mostPopular h2 {
   font-size: 35px;
   color: var(--main-color);
   text-transform: capitalize;
   margin-bottom: 30px;
 }
+
 .home .mostPopular h2 span {
   color: white;
   text-decoration: underline;
@@ -301,46 +340,56 @@ section .container {
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
 }
+
 .home .mostPopular .cards .card-item {
   background-color: var(--black-color);
   border-radius: var(--border-radius);
   padding: 30px 15px;
   margin-bottom: 30px;
 }
+
 .home .mostPopular .cards .card-item .content {
   display: flex;
   justify-content: space-between;
 }
+
 .home .mostPopular .cards .card-item img {
   width: 100%;
   overflow: hidden;
   border-radius: var(--border-radius);
   margin-bottom: 20px;
 }
+
 .home .mostPopular .cards .card-item .content .titles h3 {
   color: white;
   text-transform: capitalize;
   font-size: 17px;
   font-weight: 600;
 }
+
 .home .mostPopular .cards .card-item .content .titles p {
   color: var(--gray-color);
 }
+
 .home .mostPopular .cards .card-item .rate-download .rate,
 .home .mostPopular .cards .card-item .rate-download .download {
   display: flex;
   align-items: center;
 }
+
 .home .mostPopular .cards .card-item .rate-download .rate i {
   color: yellow;
 }
+
 .home .mostPopular .cards .card-item .rate-download .rate p {
   color: white;
   margin-left: 5px;
 }
+
 .home .mostPopular .cards .card-item .rate-download .download i {
   color: var(--main-color);
 }
+
 .home .mostPopular .cards .card-item .rate-download .download p {
   color: white;
   margin-left: 5px;
@@ -351,6 +400,7 @@ section .container {
   margin-bottom: -50px;
   text-align: center;
 }
+
 .home .mostPopular .btn a {
   font-size: 14px;
   color: #fff;
@@ -365,10 +415,12 @@ section .container {
   position: relative;
   overflow: hidden;
 }
+
 .home .mostPopular .btn a:hover {
   background-color: white;
   color: var(--main-color);
 }
+
 /** most Popular */
 
 /* your gaming library */
@@ -378,12 +430,14 @@ section .container {
   border-radius: var(--border-radius);
   background-color: var(--dark-color);
 }
+
 .home .gaming-library h2 {
   color: var(--main-color);
   font-size: 35px;
   margin-bottom: 30px;
   text-transform: capitalize;
 }
+
 .home .gaming-library h2 span {
   text-decoration: underline;
   color: white;
@@ -394,37 +448,44 @@ section .container {
   padding-bottom: 20px;
   border-bottom: 2px solid var(--black-color);
 }
+
 .home .gaming-library .items .item ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
 }
+
 .home .gaming-library .items .item ul div {
   width: inherit;
   display: flex;
   justify-content: space-between;
   transition: 0.3s;
 }
+
 .home .gaming-library .items .item ul div li:last-child {
   margin-left: 30px;
   transition: 0.3s;
 }
+
 .home .gaming-library .items .item ul li {
   font-size: 15px;
   font-weight: 600;
   text-transform: capitalize;
   text-align: center;
 }
+
 .home .gaming-library .items .item ul li img {
   border-radius: var(--border-radius);
 }
+
 .home .gaming-library .items .item ul li p {
   color: var(--gray-color);
   line-height: 30px;
   font-weight: 400;
   font-size: 14px;
 }
+
 .home .gaming-library .items .item ul li:last-child a {
   font-size: 14px;
   color: var(--main-color);
@@ -440,6 +501,7 @@ section .container {
   display: inline-block;
   position: relative;
 }
+
 .home .gaming-library .items .item ul li:last-child a.active {
   border-color: var(--gray-color);
   color: var(--gray-color);
@@ -448,11 +510,13 @@ section .container {
 .home .gaming-library .items .item:last-child {
   margin-bottom: 30px;
 }
+
 /* btn div */
 .home .gaming-library .btn {
   margin-bottom: -50px;
   text-align: center;
 }
+
 .home .gaming-library .btn a {
   font-size: 14px;
   color: #fff;
@@ -467,10 +531,12 @@ section .container {
   position: relative;
   overflow: hidden;
 }
+
 .home .gaming-library .btn a:hover {
   background-color: white;
   color: var(--main-color);
 }
+
 /* your gaming library */
 /* ? end Home   */
 
@@ -479,6 +545,7 @@ footer {
   margin-top: 60px;
   margin-bottom: 10px;
 }
+
 footer .container {
   box-sizing: border-box;
   padding: 10px 50px;
@@ -486,6 +553,7 @@ footer .container {
   justify-content: center;
   align-items: center;
 }
+
 footer .container .content {
   color: white;
   font-size: 15px;
@@ -494,10 +562,12 @@ footer .container .content {
   text-transform: capitalize;
   font-weight: 400;
 }
+
 footer .container .content p a {
   color: white;
   transition: 0.3s;
 }
+
 footer .container .content p a:hover {
   color: var(--main-color);
 }
@@ -511,16 +581,20 @@ footer .container .content p a:hover {
     width: 95%;
     padding: 10px;
   }
+
   nav .container .logo-input .input {
     display: none;
   }
+
   nav .container .logo-input img {
     margin-right: 20px;
   }
+
   /* navbar icon */
   nav .container .bars-icon {
     display: block;
   }
+
   nav .container .links {
     width: 100%;
     position: absolute;
@@ -531,6 +605,7 @@ footer .container .content p a:hover {
     height: 0;
     transition: 0.5s;
   }
+
   nav .container .links ul {
     width: 70%;
     background-color: white;
@@ -542,9 +617,11 @@ footer .container .content p a:hover {
     gap: 20px;
     transition: all 1s;
   }
+
   nav .container .links ul li {
     margin-left: 0;
   }
+
   nav .container .links.active {
     height: 250px;
   }
@@ -556,9 +633,11 @@ footer .container .content p a:hover {
     border-radius: none;
     display: block;
   }
+
   nav .container .links ul li:last-child a img {
     display: none;
   }
+
   nav .container .links ul li:last-child:hover a {
     background-color: transparent;
     color: var(--main-color);
@@ -575,17 +654,21 @@ footer .container .content p a:hover {
   .home .container {
     padding: 60px 30px;
   }
+
   .home .container .banner {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .home .container .banner .content {
     text-align: center;
   }
+
   .home .container .banner .content h2 {
     font-size: 30px;
   }
+
   /* * banner */
   /** most popular */
   .home .mostPopular .cards {
@@ -594,42 +677,51 @@ footer .container .content p a:hover {
     grid-template-rows: repeat(auto, 1fr);
     gap: 20px;
   }
+
   /** most popular */
   /** gaming library */
   .home .gaming-library h2 {
     font-size: 30px;
   }
+
   .home .gaming-library .items .item ul {
     display: block;
     text-align: center;
   }
-  .home .gaming-library .items .item ul > li:first-child {
+
+  .home .gaming-library .items .item ul>li:first-child {
     margin-bottom: 30px;
   }
 
   .home .gaming-library .items .item ul div {
     margin: 0 10px;
   }
+
   @media screen and (max-width: 400px) {
     .home .gaming-library {
       padding-left: 15px;
       padding-right: 15px;
     }
+
     .home .gaming-library .items .item ul div {
       margin: 0 0px;
     }
   }
-  .home .gaming-library .items .item ul > li:last-child {
+
+  .home .gaming-library .items .item ul>li:last-child {
     margin-top: 30px;
   }
+
   /** gaming library */
   /* footer */
   footer .container .content {
     font-size: 14px;
   }
+
   footer .container {
     padding: 10px 30px;
   }
+
   /* footer */
   /* ? Home .home */
 }
@@ -644,6 +736,7 @@ footer .container .content p a:hover {
     nav .container .logo-input img {
       margin-right: 30px;
     }
+
     /* ? Home .home */
     /** banner */
     .home .container .banner {
@@ -651,17 +744,21 @@ footer .container .content p a:hover {
       justify-content: center;
       align-items: center;
     }
+
     .home .container .banner .content {
       text-align: center;
     }
+
     .home .container .banner .content h2 {
       font-size: 35px;
     }
+
     /** banner */
     /** gaming library */
     .home .gaming-library .items .item ul div {
       margin: 0 30px;
     }
+
     /** gaming library */
     /* ? Home .home */
   }
@@ -670,6 +767,7 @@ footer .container .content p a:hover {
   nav .container .bars-icon {
     display: block;
   }
+
   nav .container .links {
     width: 100%;
     position: absolute;
@@ -680,6 +778,7 @@ footer .container .content p a:hover {
     height: 0;
     transition: 0.5s;
   }
+
   nav .container .links ul {
     width: 80%;
     background-color: white;
@@ -691,9 +790,11 @@ footer .container .content p a:hover {
     gap: 20px;
     transition: all 1s;
   }
+
   nav .container .links ul li {
     margin-left: 0;
   }
+
   nav .container .links.active {
     height: 250px;
   }
@@ -705,9 +806,11 @@ footer .container .content p a:hover {
     border-radius: none;
     display: block;
   }
+
   nav .container .links ul li:last-child a img {
     display: none;
   }
+
   nav .container .links ul li:last-child:hover a {
     background-color: transparent;
     color: var(--main-color);
@@ -726,6 +829,7 @@ footer .container .content p a:hover {
     grid-template-rows: repeat(auto, 1fr);
     gap: 20px;
   }
+
   /** most popular */
 
   /** gaming library */
@@ -733,15 +837,18 @@ footer .container .content p a:hover {
     display: block;
     text-align: center;
   }
+
   .home .gaming-library .items .item ul li:first-child {
     margin-bottom: 30px;
   }
+
   /** gaming library */
 
   /* footer */
   footer .container .content {
     font-size: 16px;
   }
+
   /* footer */
 }
 
@@ -755,6 +862,7 @@ footer .container .content p a:hover {
   .home .gaming-library .items .item ul div li {
     margin: 0 20px;
   }
+
   /** gaming library */
 }
 
@@ -777,14 +885,17 @@ footer .container .content p a:hover {
     width: 1140px;
   }
 }
+
 /* min 1200 */
 @media screen and (min-width: 1400px) {
   .container {
     width: 1320px;
   }
+
   /* gaming library */
   .home .gaming-library .items .item ul div li:last-child {
     margin-left: 80px;
   }
+
   /* gaming library */
 }
