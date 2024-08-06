@@ -1,254 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- main css file -->
-    <link rel="stylesheet" href="./style.css" />
-    <!-- profile css file -->
-    <link rel="stylesheet" href="./profile.css" />
-    <title>Cyborg</title>
-  </head>
-  <body>
-    <!-- animation -->
-    <div class="animation">
-      <div class="animation-element">
-        <span class="s-1"></span>
-        <span class="s-2"></span>
-        <span class="s-3"></span>
-        <span class="s-4"></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- google fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- main css file -->
+  <link rel="stylesheet" href="../styles/index.css" />
+  <!-- profile css file -->
+  <link rel="stylesheet" href="../styles/profile.css" />
+  <title>Cyborg</title>
+</head>
+
+<body>
+  <!-- animation -->
+  <div class="animation">
+    <div class="animation-element">
+      <span class="s-1"></span>
+      <span class="s-2"></span>
+      <span class="s-3"></span>
+      <span class="s-4"></span>
+    </div>
+  </div>
+  <!-- animation -->
+
+  <!-- start nav -->
+  <nav>
+    <div class="container">
+      <div class="logo-input">
+        <img src="assets/images/logo.png" alt="Cyborg-logo" />
+        <div class="input">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="type something" />
+        </div>
+      </div>
+      <div class="links">
+        <ul>
+          <li><a class="active" href="../index.html">home</a></li>
+          <li><a href="../pages/browse.html">browse</a></li>
+          <li><a href="../pages/details.html">details</a></li>
+          <li><a href="../pages/streams.html">streams</a></li>
+          <li>
+            <a href="../pages/profile.html">profile <img src="assets/images/profile-header.jpg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="bars-icon">
+        <i id="bars-icon" class="fa-solid fa-bars"></i>
       </div>
     </div>
-    <!-- animation -->
+  </nav>
+  <!-- end nav -->
 
-    <!-- start nav -->
-    <nav>
-      <div class="container">
-        <div class="logo-input">
-          <img src="./logo.png" alt="Cyborg-logo" />
-          <div class="input">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="type something" />
+  <!-- profile section -->
+  <section class="profile">
+    <div class="container">
+      <!-- main profile -->
+      <div class="main-profile">
+        <div class="topSection">
+          <div class="img"><img src="assets/images/profile.jpg" alt="" /></div>
+          <div class="myData">
+            <div class="status">offline</div>
+            <div class="name">alan smithee</div>
+            <div class="desc">
+              You Haven't Gone Live yet. Go Live By Touching The Button Below.
+            </div>
+            <div class="start-live-streamBtn">start live stream</div>
           </div>
-        </div>
-        <div class="links">
           <ul>
-            <li><a class="active" href="./index.html">home</a></li>
-            <li><a href="./browse.html">browse</a></li>
-            <li><a href="./details.html">details</a></li>
-            <li><a href="./streams.html">streams</a></li>
-            <li>
-              <a href="./profile.html"
-                >profile <img src="./profile-header.jpg" alt=""
-              /></a>
-            </li>
+            <li>games downloaded <span>3</span></li>
+            <li>friends online <span>16</span></li>
+            <li>live streams <span>none</span></li>
+            <li>clips <span>29</span></li>
           </ul>
         </div>
-        <div class="bars-icon">
-          <i id="bars-icon" class="fa-solid fa-bars"></i>
+        <div class="bottomSection">
+          <!-- your most popular clips -->
+          <div class="most-popular-clips">
+            <h2><span>your most popular</span> clips</h2>
+            <div class="clips">
+              <div class="clip">
+                <img src="assets/images/clip-01.jpg" alt="" />
+                <div>
+                  <p>first clip</p>
+                  <div>
+                    <i class="fa-solid fa-eye"></i>
+                    <p>250</p>
+                  </div>
+                </div>
+              </div>
+              <div class="clip">
+                <img src="assets/images/clip-02.jpg" alt="" />
+                <div>
+                  <p>second clip</p>
+                  <div>
+                    <i class="fa-solid fa-eye"></i>
+                    <p>250</p>
+                  </div>
+                </div>
+              </div>
+              <div class="clip">
+                <img src="assets/images/clip-03.jpg" alt="" />
+                <div>
+                  <p>third clip</p>
+                  <div>
+                    <i class="fa-solid fa-eye"></i>
+                    <p>250</p>
+                  </div>
+                </div>
+              </div>
+              <div class="clip">
+                <img src="assets/images/clip-04.jpg" alt="" />
+                <div>
+                  <p>fourth clip</p>
+                  <div>
+                    <i class="fa-solid fa-eye"></i>
+                    <p>250</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="load-more-clips"><a href="#">load more clips</a></div>
+          </div>
+          <!-- your most popular clips -->
         </div>
       </div>
-    </nav>
-    <!-- end nav -->
+      <!-- main profile -->
 
-    <!-- profile section -->
-    <section class="profile">
-      <div class="container">
-        <!-- main profile -->
-        <div class="main-profile">
-          <div class="topSection">
-            <div class="img"><img src="./profile.jpg" alt="" /></div>
-            <div class="myData">
-              <div class="status">offline</div>
-              <div class="name">alan smithee</div>
-              <div class="desc">
-                You Haven't Gone Live yet. Go Live By Touching The Button Below.
-              </div>
-              <div class="start-live-streamBtn">start live stream</div>
-            </div>
+      <!-- your gaming library -->
+      <div class="gaming-library">
+        <h2><span>your gaming</span> library</h2>
+        <div class="items">
+          <div class="item">
             <ul>
-              <li>games downloaded <span>3</span></li>
-              <li>friends online <span>16</span></li>
-              <li>live streams <span>none</span></li>
-              <li>clips <span>29</span></li>
+              <li><img src="assets/images/game-01.jpg" alt="game-1" /></li>
+              <div>
+                <li>
+                  dota 2
+                  <p>sandbox</p>
+                </li>
+                <li>
+                  data added
+                  <p>24/08/2036</p>
+                </li>
+              </div>
+              <div>
+                <li>
+                  hours played
+                  <p>634 h 22 mins</p>
+                </li>
+                <li>
+                  currently
+                  <p>downloaded</p>
+                </li>
+              </div>
+              <li><a href="#">download</a></li>
             </ul>
           </div>
-          <div class="bottomSection">
-            <!-- your most popular clips -->
-            <div class="most-popular-clips">
-              <h2><span>your most popular</span> clips</h2>
-              <div class="clips">
-                <div class="clip">
-                  <img src="./clip-01.jpg" alt="" />
-                  <div>
-                    <p>first clip</p>
-                    <div>
-                      <i class="fa-solid fa-eye"></i>
-                      <p>250</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="clip">
-                  <img src="./clip-02.jpg" alt="" />
-                  <div>
-                    <p>second clip</p>
-                    <div>
-                      <i class="fa-solid fa-eye"></i>
-                      <p>250</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="clip">
-                  <img src="./clip-03.jpg" alt="" />
-                  <div>
-                    <p>third clip</p>
-                    <div>
-                      <i class="fa-solid fa-eye"></i>
-                      <p>250</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="clip">
-                  <img src="./clip-04.jpg" alt="" />
-                  <div>
-                    <p>fourth clip</p>
-                    <div>
-                      <i class="fa-solid fa-eye"></i>
-                      <p>250</p>
-                    </div>
-                  </div>
-                </div>
+          <div class="item">
+            <ul>
+              <li><img src="assets/images/game-02.jpg" alt="game-1" /></li>
+              <div>
+                <li>
+                  fontnite
+                  <p>sandbox</p>
+                </li>
+                <li>
+                  data added
+                  <p>24/08/2036</p>
+                </li>
               </div>
-              <div class="load-more-clips"><a href="#">load more clips</a></div>
-            </div>
-            <!-- your most popular clips -->
+              <div>
+                <li>
+                  hours played
+                  <p>634 h 22 mins</p>
+                </li>
+                <li>
+                  currently
+                  <p>downloaded</p>
+                </li>
+              </div>
+              <li><a href="#">download</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <ul>
+              <li><img src="assets/images/game-03.jpg" alt="game-1" /></li>
+              <div>
+                <li>
+                  cs-go
+                  <p>sandbox</p>
+                </li>
+                <li>
+                  data added
+                  <p>24/08/2036</p>
+                </li>
+              </div>
+              <div>
+                <li>
+                  hours played
+                  <p>634 h 22 mins</p>
+                </li>
+                <li>
+                  currently
+                  <p>downloaded</p>
+                </li>
+              </div>
+              <li><a href="#">download</a></li>
+            </ul>
           </div>
         </div>
-        <!-- main profile -->
-
-        <!-- your gaming library -->
-        <div class="gaming-library">
-          <h2><span>your gaming</span> library</h2>
-          <div class="items">
-            <div class="item">
-              <ul>
-                <li><img src="./game-01.jpg" alt="game-1" /></li>
-                <div>
-                  <li>
-                    dota 2
-                    <p>sandbox</p>
-                  </li>
-                  <li>
-                    data added
-                    <p>24/08/2036</p>
-                  </li>
-                </div>
-                <div>
-                  <li>
-                    hours played
-                    <p>634 h 22 mins</p>
-                  </li>
-                  <li>
-                    currently
-                    <p>downloaded</p>
-                  </li>
-                </div>
-                <li><a href="#">download</a></li>
-              </ul>
-            </div>
-            <div class="item">
-              <ul>
-                <li><img src="./game-02.jpg" alt="game-1" /></li>
-                <div>
-                  <li>
-                    fontnite
-                    <p>sandbox</p>
-                  </li>
-                  <li>
-                    data added
-                    <p>24/08/2036</p>
-                  </li>
-                </div>
-                <div>
-                  <li>
-                    hours played
-                    <p>634 h 22 mins</p>
-                  </li>
-                  <li>
-                    currently
-                    <p>downloaded</p>
-                  </li>
-                </div>
-                <li><a href="#">download</a></li>
-              </ul>
-            </div>
-            <div class="item">
-              <ul>
-                <li><img src="./game-03.jpg" alt="game-1" /></li>
-                <div>
-                  <li>
-                    cs-go
-                    <p>sandbox</p>
-                  </li>
-                  <li>
-                    data added
-                    <p>24/08/2036</p>
-                  </li>
-                </div>
-                <div>
-                  <li>
-                    hours played
-                    <p>634 h 22 mins</p>
-                  </li>
-                  <li>
-                    currently
-                    <p>downloaded</p>
-                  </li>
-                </div>
-                <li><a href="#">download</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- your gaming library -->
       </div>
-    </section>
-    <!-- profile section -->
+      <!-- your gaming library -->
+    </div>
+  </section>
+  <!-- profile section -->
 
-    <!-- start footer -->
-    <footer>
-      <div class="container">
-        <div class="content">
-          <p>
-            copyright <i class="fa-solid fa-copyright"></i> 2036 cyborg gaming
-            company. all rights reserved.
-          </p>
-          <p>
-            designed by :
-            <a
-              href="https://www.facebook.com/profile.php?id=100030245752684"
-              target="_blank"
-              >Abdallah Khattab</a
-            >
-          </p>
-        </div>
+  <!-- start footer -->
+  <footer>
+    <div class="container">
+      <div class="content">
+        <p>
+          copyright <i class="fa-solid fa-copyright"></i> 2036 cyborg gaming
+          company. all rights reserved.
+        </p>
+        <p>
+          designed by :
+          <a href="https://www.facebook.com/profile.php?id=100030245752684" target="_blank">Abdallah Khattab</a>
+        </p>
       </div>
-    </footer>
-    <!-- end footer -->
+    </div>
+  </footer>
+  <!-- end footer -->
 
-    <script src="./main.js"></script>
-  </body>
+  <script src="../scripts/main.js"></script>
+</body>
+
 </html>
