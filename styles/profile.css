@@ -37,6 +37,7 @@ html {
   text-transform: capitalize;
   letter-spacing: 0.5px;
   margin-bottom: 15px;
+  cursor: default;
 }
 .main-profile .topSection .myData .name {
   margin-bottom: 20px;
@@ -52,7 +53,7 @@ html {
 }
 .main-profile .topSection .myData .start-live-streamBtn {
   margin-top: 30px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   padding: 12px 30px;
 
@@ -60,13 +61,14 @@ html {
   background-color: transparent;
   border: 1px solid var(--main-color);
   border-radius: 25px;
+  cursor: pointer;
 
   display: inline-block;
   letter-spacing: 0.5px;
   transition: all 0.3s;
 }
 .main-profile .topSection .myData .start-live-streamBtn:hover {
-  background-color: white;
+  background-color: var(--bg-color-hover);
 }
 
 .main-profile ul {
@@ -162,7 +164,7 @@ html {
 }
 .most-popular-clips .load-more-clips a:hover {
   color: var(--main-color);
-  background-color: white;
+  background-color: var(--bg-color-hover);
 }
 /* most-popular-clips */
 

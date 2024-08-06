@@ -4,6 +4,8 @@
   --dark-color: #1f2122;
   --gray-color: #666;
   --border-radius: 23px;
+
+  --bg-color-hover:white;
 }
 html {
   scroll-behavior: smooth;
@@ -234,7 +236,7 @@ section .container {
 /* * banner */
 .home .container .banner {
   color: white;
-  background-image: url("./banner-bg.jpg");
+  background-image: url("../assets/images/banner-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -273,7 +275,7 @@ section .container {
 }
 .home .container .banner a:hover {
   color: var(--main-color);
-  background-color: white;
+  background-color: var(--bg-color-hover);
 }
 /* * banner */
 
@@ -366,7 +368,7 @@ section .container {
   overflow: hidden;
 }
 .home .mostPopular .btn a:hover {
-  background-color: white;
+  background-color: var(--bg-color-hover);
   color: var(--main-color);
 }
 /** most Popular */
@@ -468,7 +470,7 @@ section .container {
   overflow: hidden;
 }
 .home .gaming-library .btn a:hover {
-  background-color: white;
+  background-color: var(--bg-color-hover);
   color: var(--main-color);
 }
 /* your gaming library */
@@ -508,8 +510,9 @@ footer .container .content p a:hover {
 /* max 576 */
 @media screen and (max-width: 576px) {
   .container {
+    box-sizing: border-box;
     width: 95%;
-    padding: 10px;
+    padding-right: 20px !important;
   }
   nav .container .logo-input .input {
     display: none;

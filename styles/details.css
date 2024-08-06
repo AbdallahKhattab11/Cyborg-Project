@@ -170,7 +170,7 @@ body {
   transition: all 0.3s;
 }
 .content .download-fortniteBtn a:hover {
-  background-color: white;
+  background-color: var(--bg-color-hover);
 }
 /* download-fortniteBtn */
 /* content */
