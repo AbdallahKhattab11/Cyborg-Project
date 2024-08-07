@@ -9,6 +9,7 @@ let a = document.querySelectorAll("nav .container .links ul li a"); // navbar li
 let barsIcon = document.getElementById("bars-icon");
 let linksDiv = document.querySelector("nav .container .links");
 
+const LOADING_PAGE_TIME_MS = 500;
 //* ------------------------------------------
 
 // Home variables
@@ -19,6 +20,7 @@ let viewYourLibraryBtn = document.querySelector(".gaming-library .btn a");
 
 //! ----------Start of Shared functions--------------------------------------------------------
 
+
 //* --------------loading animation------------------------
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -27,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
     animation.style.cssText = " display: none;";
-  }, 500);
+  }, LOADING_PAGE_TIME_MS);
 });
 
 
